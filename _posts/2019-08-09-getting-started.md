@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-author: Cotes Chung
+author: Sachin
 date: 2019-08-09 20:55:00 +0800
-categories: [Blogging, Tutorial]
+categories: [Boot2root, TryHackMe]
 tags: [getting started]
 pin: true
 ---
