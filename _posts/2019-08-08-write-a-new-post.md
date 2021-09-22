@@ -15,7 +15,7 @@ It helps you set up users and groups, and shows you how to protect your resource
 
 ## What are IAM Resources?
 
-The user, group, role, policy, and identity provider objects that are stored in IAM. As with other AWS services, you can add, edit, and remove resources from IAM.
+The `user`, `group`, `role`, `policy`, and `identity provider objects` that are stored in IAM. As with other AWS services, you can add, edit, and remove resources from IAM.
 
 
 ## Configuration Matter
