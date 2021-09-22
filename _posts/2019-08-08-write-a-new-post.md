@@ -7,9 +7,9 @@ tags: [writing]
 render_with_liquid: false
 ---
 
-## Naming and Path
+## What is IAM?
 
-Create a new file named `YYYY-MM-DD-TITLE.EXTENSION` and put it in the `_posts/` of the root directory. Please note that the `EXTENSION` must be one of `md` and `markdown`.
+In AWS `Identity and Access Management (IAM)` is a web service that helps you securely control access to AWS resources. You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources.
 
 ## Front Matter
 
