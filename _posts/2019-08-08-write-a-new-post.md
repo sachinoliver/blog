@@ -1,7 +1,7 @@
 ---
-title: Writing a New Post
-author: Cotes Chung
-date: 2019-08-08 14:10:00 +0800
+title: Overly Permisive IAM resouces
+author: Sachin
+date: 2021-08-08 14:10:00 +0800
 categories: [Cloud Pentesting, AWS]
 tags: [writing]
 render_with_liquid: false
