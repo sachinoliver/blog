@@ -12,9 +12,15 @@ render_with_liquid: false
 In AWS `Identity and Access Management (IAM)` is a web service that helps you securely control access to AWS resources. You use IAM to control who is `authenticated (signed in)` and `authorized (has permissions)` to use resources.
 It helps you set up users and groups, and shows you how to protect your resources with access control policies. It also shows how to connect to other identity services to grant external users access to your AWS resources.
 
-## Front Matter
 
-Basically, you need to fill the [Front Matter](https://jekyllrb.com/docs/front-matter/) as below at the top of the post:
+## What are IAM Resources?
+
+The user, group, role, policy, and identity provider objects that are stored in IAM. As with other AWS services, you can add, edit, and remove resources from IAM.
+
+
+## Configuration Matter
+
+
 
 ```yaml
 ---
