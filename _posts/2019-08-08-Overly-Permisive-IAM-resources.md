@@ -17,12 +17,5 @@ The `user`, `group`, `role`, `policy`, and `identity provider objects` that are 
 
 
 
-```yaml
----
-title: TITLE
-date: YYYY-MM-DD HH:MM:SS +/-TTTT
-categories: [TOP_CATEGORIE, SUB_CATEGORIE]
-tags: [TAG]     # TAG names should always be lowercase
----
-```
+
 
