@@ -6,12 +6,8 @@ categories: [BOF, Linux x86]
 tags: [shellcode, BOF, ExploitDev]
 math: true
 mermaid: true
-image:
-  src: ![](/assets/img/posts/bufferoverflow/LinuxBOF.jpg)
-
-  width: 850
-  height: 585
 ---
+![](/assets/img/posts/bufferoverflow/LinuxBOF.jpg)
 
 This is a walkthrough of the HTB Academy Module for Stack-Based Buffer Overflow on Linux X86.
 
