@@ -7,7 +7,7 @@ tags: [shellcode, BOF, ExploitDev]
 math: true
 mermaid: true
 ---
-![](/assets/img/posts/bufferoverflow/LinuxBOF.jpg)
+![](/assets/img/posts/bufferoverflow/bof.png)
 
 This is a walkthrough of the HTB Academy Module for Stack-Based Buffer Overflow on Linux X86.
 
