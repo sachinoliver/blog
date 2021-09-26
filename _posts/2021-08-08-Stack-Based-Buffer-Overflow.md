@@ -1,7 +1,7 @@
 ---
 title: Stack-Based Buffer Overflow Linux x86
 author: Sachin
-date: 2019-08-08 11:33:00 +0800
+date: 2021-08-08 11:33:00 +0800
 categories: [BOF, Linux x86]
 tags: [shellcode, BOF, ExploitDev]
 math: true
