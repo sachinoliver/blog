@@ -1,5 +1,5 @@
 ---
-title: Stack Based Buffer Overflow Linux x86
+title: Stack-Based Buffer Overflow Linux x86
 author: Sachin
 date: 2019-08-08 11:33:00 +0800
 categories: [BOF, Linux x86]
