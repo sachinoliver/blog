@@ -7,7 +7,8 @@ tags: [shellcode, BOF, ExploitDev]
 math: true
 mermaid: true
 image:
-  src: https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/devices-mockup.png
+  src: blog/assets/img/posts/bufferoverflow/LinuxBOF.jpg
+
   width: 850
   height: 585
 ---
