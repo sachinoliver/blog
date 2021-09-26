@@ -7,7 +7,7 @@ tags: [shellcode, BOF, ExploitDev]
 math: true
 mermaid: true
 image:
-  src: /assets/img/posts/bufferoverflow/LinuxBOF.jpg
+  src: ![](/assets/img/posts/bufferoverflow/LinuxBOF.jpg)
 
   width: 850
   height: 585
