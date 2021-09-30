@@ -27,7 +27,7 @@ The most significant cause of buffer overflows is the use of programming languag
 For this reason, developers are forced to define such areas in the programming code themselves, which increases vulnerability many times over. These areas are often left undefined for testing purposes or due to carelessness. Even if they were used for testing purposes, they might have been overlooked at the end of the development process.
 
 
-Exploit Development Introduction
+## Exploit Development Introduction
 
 Exploit development comes in the Exploitation Phase after specific software and even its versions have been identified. The Exploitation Phase goal is to use the information found and its analysis to exploit the potential ways to gain interaction and/or access to the target system.
 
@@ -36,10 +36,12 @@ Developing our own exploits can be very complex and requires a deep understandin
 Before we run any exploits, we need to understand what an exploit is. An exploit is a code that causes the service to perform an operation we want by abusing the found vulnerability. Such codes often serve as proof-of-concept (POC) in our reports.
 
 There are two types of exploits. One is unknown (0-day exploits), and the other is known (N-day exploits).
-0-Day Exploits
+
+### 0-Day Exploits
 
 An 0-day exploit is a code that exploits a newly identified vulnerability in a specific application. The vulnerability does not need to be public in the application. The danger with such exploits is that if the developers of this application are not informed about the vulnerability, they will likely persist with new updates.
-N-Day Exploits
+
+### N-Day Exploits
 
 If the vulnerability is published and informs the developers, they will still need time to write a fix to prevent them as soon as possible. When they are published, they talk about N-day exploits, counting the days between the publication of the exploit and an attack on the unpatched systems.
 
