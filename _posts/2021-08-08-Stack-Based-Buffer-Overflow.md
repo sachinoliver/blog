@@ -45,13 +45,15 @@ An 0-day exploit is a code that exploits a newly identified vulnerability in a s
 
 If the vulnerability is published and informs the developers, they will still need time to write a fix to prevent them as soon as possible. When they are published, they talk about N-day exploits, counting the days between the publication of the exploit and an attack on the unpatched systems.
 
-Also, these exploits can be divided into four different categories:
+Also, these exploits can be divided into four different categories:`
 
-  `> Local
-   > Remote
-   > DoS
-   > WebApp`
 
+    Local
+    Remote
+    DoS
+    WebApp
+
+`
 ### Local Exploits
 
 Local exploits / Privilege Escalation exploits can be executed when opening a file. However, the prerequisite for this is that the local software contains a security vulnerability. Often a local exploit (e.g., in a PDF document or as a macro in a Word or Excel file) first tries to exploit security holes in the program with which the file was imported to achieve a higher privilege level and thus load and execute `malicious code / shellcode` in the operating system. The actual action that the exploit performs is called `payload`.
