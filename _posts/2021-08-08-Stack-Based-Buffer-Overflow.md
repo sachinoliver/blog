@@ -54,7 +54,7 @@ Also, these exploits can be divided into four different categories:
 
 ### Local Exploits
 
-Local exploits / Privilege Escalation exploits can be executed when opening a file. However, the prerequisite for this is that the local software contains a security vulnerability. Often a local exploit (e.g., in a PDF document or as a macro in a Word or Excel file) first tries to exploit security holes in the program with which the file was imported to achieve a higher privilege level and thus load and execute malicious code / shellcode in the operating system. The actual action that the exploit performs is called payload.
+Local exploits / Privilege Escalation exploits can be executed when opening a file. However, the prerequisite for this is that the local software contains a security vulnerability. Often a local exploit (e.g., in a PDF document or as a macro in a Word or Excel file) first tries to exploit security holes in the program with which the file was imported to achieve a higher privilege level and thus load and execute `malicious code / shellcode` in the operating system. The actual action that the exploit performs is called payload.
 
 ### Remote Exploits
 
