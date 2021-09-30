@@ -43,7 +43,7 @@ An `0-day exploit` is a code that exploits a newly identified vulnerability in a
 
 ### N-Day Exploits
 
-If the vulnerability is published and informs the developers, they will still need time to write a fix to prevent them as soon as possible. When they are published, they talk about N-day exploits, counting the days between the publication of the exploit and an attack on the unpatched systems.
+If the vulnerability is published and informs the developers, they will still need time to write a fix to prevent them as soon as possible. When they are published, they talk about `N-day exploits`, counting the days between the publication of the exploit and an attack on the unpatched systems.
 
 Also, these exploits can be divided into four different categories:
 
