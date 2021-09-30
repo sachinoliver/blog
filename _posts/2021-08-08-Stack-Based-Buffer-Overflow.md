@@ -29,17 +29,17 @@ For this reason, developers are forced to define such areas in the programming c
 
 ## Exploit Development Introduction
 
-Exploit development comes in the Exploitation Phase after specific software and even its versions have been identified. The Exploitation Phase goal is to use the information found and its analysis to exploit the potential ways to gain interaction and/or access to the target system.
+Exploit development comes in the `Exploitation Phase` after specific software and even its versions have been identified. The Exploitation Phase goal is to use the information found and its analysis to exploit the potential ways to gain interaction and/or access to the target system.
 
-Developing our own exploits can be very complex and requires a deep understanding of CPU operations and the software's functions that serve as our target. Many exploits are written in different programming languages. One of the most popular programming languages for this is Python because it is easy to understand and easy to write with. In this module, we will focus on basic techniques for exploit development, as a fundamental understanding must be developed before we can deal with the various security mechanisms of memory.
+Developing our own exploits can be very complex and requires a deep understanding of CPU operations and the software's functions that serve as our target. Many exploits are written in different programming languages. One of the most popular programming languages for this is `Python` because it is easy to understand and easy to write with. In this module, we will focus on basic techniques for exploit development, as a `fundamental understanding` must be developed before we can deal with the various security mechanisms of memory.
 
-Before we run any exploits, we need to understand what an exploit is. An exploit is a code that causes the service to perform an operation we want by abusing the found vulnerability. Such codes often serve as proof-of-concept (POC) in our reports.
+Before we run any exploits, we need to understand what an exploit is. An exploit is a code that causes the service to perform an operation we want by abusing the found vulnerability. Such codes often serve as `proof-of-concept (POC)` in our reports.
 
-There are two types of exploits. One is unknown (0-day exploits), and the other is known (N-day exploits).
+There are two types of exploits. One is unknown (`0-day` exploits), and the other is known (`N-day` exploits).
 
 ### 0-Day Exploits
 
-An 0-day exploit is a code that exploits a newly identified vulnerability in a specific application. The vulnerability does not need to be public in the application. The danger with such exploits is that if the developers of this application are not informed about the vulnerability, they will likely persist with new updates.
+An `0-day exploit` is a code that exploits a newly identified vulnerability in a specific application. The vulnerability does not need to be public in the application. The danger with such exploits is that if the developers of this application are not informed about the vulnerability, they will likely persist with new updates.
 
 ### N-Day Exploits
 
