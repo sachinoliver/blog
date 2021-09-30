@@ -62,7 +62,7 @@ The remote exploits very often exploit the buffer overflow vulnerability to get 
 
 ### DoS Exploits
 
-DoS (Denial of Service) exploits are codes that prevent other systems from functioning, i.e., cause a crash of individual software or the entire system.
+DoS (`Denial of Service`) exploits are codes that prevent other systems from functioning, i.e., cause a crash of individual software or the entire system.
 
 ### WebApp Exploits
 
