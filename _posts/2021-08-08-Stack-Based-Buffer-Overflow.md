@@ -47,10 +47,10 @@ If the vulnerability is published and informs the developers, they will still ne
 
 Also, these exploits can be divided into four different categories:
 
-   `Local
-    Remote
-    DoS
-    WebApp`
+   `>Local
+    >Remote
+    >DoS
+    >WebApp`
 
 ### Local Exploits
 
