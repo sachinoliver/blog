@@ -52,16 +52,19 @@ Also, these exploits can be divided into four different categories:
     DoS
     WebApp
 
-Local Exploits
+### Local Exploits
 
 Local exploits / Privilege Escalation exploits can be executed when opening a file. However, the prerequisite for this is that the local software contains a security vulnerability. Often a local exploit (e.g., in a PDF document or as a macro in a Word or Excel file) first tries to exploit security holes in the program with which the file was imported to achieve a higher privilege level and thus load and execute malicious code / shellcode in the operating system. The actual action that the exploit performs is called payload.
-Remote Exploits
+
+### Remote Exploits
 
 The remote exploits very often exploit the buffer overflow vulnerability to get the payload running on the system. This type of exploits differs from local exploits because they can be executed over the network to perform the desired operation.
-DoS Exploits
+
+### DoS Exploits
 
 DoS (Denial of Service) exploits are codes that prevent other systems from functioning, i.e., cause a crash of individual software or the entire system.
-WebApp Exploits
+
+### WebApp Exploits
 
 A Web application exploit uses a vulnerability in such software. Such vulnerabilities can, for example, allow a command injection on the application itself or the underlying database.
 
