@@ -157,3 +157,6 @@ chat). We can find invite code in downloaded data from the server
 ```
 ![image](https://user-images.githubusercontent.com/63084488/135749488-ee0679a2-3448-476b-843a-0c672f2392f4.png)
 
+
+login usin the invite code
+![image](https://user-images.githubusercontent.com/63084488/135749873-84c3f90a-7373-4c36-ac81-66070b39d6e1.png)
