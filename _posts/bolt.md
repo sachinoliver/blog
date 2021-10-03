@@ -132,3 +132,11 @@ Found: demo.bolt.htb (Status: 302) [Size: 219]
 ![image](https://user-images.githubusercontent.com/63084488/135749090-50bb0b6c-014b-45db-8a25-5b52761e1e72.png)
 
 
+
+demo.bolt.htb
+![image](https://user-images.githubusercontent.com/63084488/135749239-bcfcc2ae-1df5-465b-ac40-bd464e1d0355.png)
+
+mail.bolt.htb
+![image](https://user-images.githubusercontent.com/63084488/135749255-e2d172ca-8640-492e-ae92-12f455e78902.png)
+
+
