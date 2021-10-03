@@ -161,3 +161,5 @@ chat). We can find invite code in downloaded data from the server
 login usin the invite code
 ![image](https://user-images.githubusercontent.com/63084488/135749918-c2700a11-3c7b-410d-9dd7-f63582d6d575.png)
 
+login to mail.bolt.htb using the creds
+![image](https://user-images.githubusercontent.com/63084488/135750049-aa2071b5-326f-4fcc-98bf-cbdf7f2a8661.png)
