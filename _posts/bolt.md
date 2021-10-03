@@ -107,4 +107,26 @@ lloged in as admin with password
 chat 
 ![image](https://user-images.githubusercontent.com/63084488/135748519-9d6e2015-5e29-47c4-a208-71016173e819.png)
 
+```
+gobuster vhost -u http://bolt.htb -t 30 -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt 
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:          http://bolt.htb
+[+] Method:       GET
+[+] Threads:      30
+[+] Wordlist:     /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt
+[+] User Agent:   gobuster/3.1.0
+[+] Timeout:      10s
+===============================================================
+2021/10/03 14:03:37 Starting gobuster in VHOST enumeration mode
+===============================================================
+Found: mail.bolt.htb (Status: 200) [Size: 4943]
+Found: demo.bolt.htb (Status: 302) [Size: 219] 
+                                               
+===============================================================
+2021/10/03 14:04:53 Finished
+===============================================================![image](https://user-images.githubusercontent.com/63084488/135749090-50bb0b6c-014b-45db-8a25-5b52761e1e72.png)
 
+```
