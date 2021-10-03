@@ -163,3 +163,12 @@ login usin the invite code
 
 login to mail.bolt.htb using the creds
 ![image](https://user-images.githubusercontent.com/63084488/135750049-aa2071b5-326f-4fcc-98bf-cbdf7f2a8661.png)
+
+The footer of ‘demo’ dashboard displays that, the server is using ‘Flask’.
+![image](https://user-images.githubusercontent.com/63084488/135750204-cf31576d-4193-4563-bd2d-35a0b7b9b551.png)
+
+
+ssti on name
+![image](https://user-images.githubusercontent.com/63084488/135750340-47a80d40-0bd4-4b9d-b2fc-204bb86961b0.png)
+
+
