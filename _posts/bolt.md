@@ -139,4 +139,21 @@ demo.bolt.htb
 mail.bolt.htb
 ![image](https://user-images.githubusercontent.com/63084488/135749255-e2d172ca-8640-492e-ae92-12f455e78902.png)
 
+To create a new account on ‘demo’ vhost, we need to have invite code (as mentioned in direct 
+chat). We can find invite code in downloaded data from the server
+
+
+```bash
+~/Downloads/htb/bolt ❯ grep -iR -r -A 2 'invite_code' 2>/dev/null
+41093412e0da959c80875bb0db640c1302d5bcdffec759a3a5670950272789ad/app/base/routes.py:        code	  = request.form['invite_code']
+41093412e0da959c80875bb0db640c1302d5bcdffec759a3a5670950272789ad/app/base/routes.py-        if code != 'XNSS-HSJW-3NGU-8XTJ':
+41093412e0da959c80875bb0db640c1302d5bcdffec759a3a5670950272789ad/app/base/routes.py-            return render_template('code-500.html')
+--
+41093412e0da959c80875bb0db640c1302d5bcdffec759a3a5670950272789ad/app/base/forms.py:    invite_code = TextField('Invite Code', id='invite_code'    , validators=[DataRequired()])
+--
+41093412e0da959c80875bb0db640c1302d5bcdffec759a3a5670950272789ad/app/base/templates/accounts/register.html:            {{ form.invite_code(placeholder="Invite Code", class="form-control") }}
+41093412e0da959c80875bb0db640c1302d5bcdffec759a3a5670950272789ad/app/base/templates/accounts/register.html-            <div class="input-group-append">
+41093412e0da959c80875bb0db640c1302d5bcdffec759a3a5670950272789ad/app/base/templates/accounts/register.html-              <div class="input-group-text">
+```
+![image](https://user-images.githubusercontent.com/63084488/135749488-ee0679a2-3448-476b-843a-0c672f2392f4.png)
 
