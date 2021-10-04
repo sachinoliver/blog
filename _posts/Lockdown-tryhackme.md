@@ -67,5 +67,17 @@ OS and Service detection performed. Please report any incorrect results at https
 Nmap done: 1 IP address (1 host up) scanned in 29.28 seconds
            Raw packets sent: 85 (7.328KB) | Rcvd: 46 (11.520KB)
 ```
+When trying to visit the port 80 we get a host name contracttracer.thm. 
+![image](https://user-images.githubusercontent.com/63084488/135784418-2af0b174-6f3e-4c8f-9ae0-d3793c0268be.png)
 
+add it to /etc/hosts file.
+
+we get 
+![image](https://user-images.githubusercontent.com/63084488/135784606-ba6a37d4-7fae-4800-b082-ed7515bd7f15.png)
+
+admin panel.
+![image](https://user-images.githubusercontent.com/63084488/135784797-f8fc1423-42de-4868-a7f2-6fa0b284e089.png)
+
+using some basic sql injections `' OR 1=1-- -` on the login page and we are able to login.
+![image](https://user-images.githubusercontent.com/63084488/135785135-432cb9a3-d645-46a4-a1dc-5bd733ebdbed.png)
 
