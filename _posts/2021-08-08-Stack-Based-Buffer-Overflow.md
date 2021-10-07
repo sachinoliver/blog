@@ -82,22 +82,22 @@ The architecture of the `Von-Neumann` was developed by the Hungarian mathematici
 In the Von-Neumann architecture, the most important units, the `Arithmetical Logical Unit (ALU)` and `Control Unit (CU)`, are combined in the actual `Central Processing Unit (CPU`). The CPU is responsible for executing the `instructions` and for `flow control`. The instructions are executed one after the other, step by step. The commands and data are fetched from memory by the `CU`. The connection between processor, memory, and input/output unit is called a `bus system`, which is not mentioned in the original Von-Neumann architecture but plays an essential role in practice. In the Von-Neumann architecture, all instructions and data are transferred via the `bus system`.
 
 
-Memory
+## Memory
 
 The memory can be divided into two different categories:
 
     Primary Memory
     Secondary Memory
 
-Primary Memory
+### Primary Memory
 
 The primary memory is the Cache and Random Access Memory (RAM). If we think about it logically, memory is nothing more than a place to store information. We can think of it as leaving something at one of our friends to pick it up again later. But for this, it is necessary to know the friend's address to pick up what we have left behind. It is the same as RAM. RAM describes a memory type whose memory allocations can be accessed directly and randomly by their memory addresses.
 
 The cache is integrated into the processor and serves as a buffer, which in the best case, ensures that the processor is always fed with data and program code. Before the program code and data enter the processor for processing, the RAM serves as data storage. The size of the RAM determines the amount of data that can be stored for the processor. However, when the primary memory loses power, all stored contents are lost.
-Secondary Memory
+### Secondary Memory
 
 The secondary memory is the external data storage, such as HDD/SSD, Flash Drives and CD/DVD-ROMs of a computer, which is not directly accessed by the CPU, but via the I/O interfaces. In other words, it is a mass storage device. It is used to permanently store data that does not need to be processed at the moment. Compared to primary memory, it has a higher storage capacity, can store data permanently even without a power supply, and works much slower.
-Control Unit
+## Control Unit
 
 The Control Unit (CU) is responsible for the correct interworking of the processor's individual parts. An internal bus connection is used for the tasks of the CU. The tasks of the CU can be summarised as follows:
 
@@ -110,7 +110,7 @@ The Control Unit (CU) is responsible for the correct interworking of the process
     Monitoring of the entire system
 
 The CU contains the Instruction Register (IR), which contains all instructions that the processor decodes and executes accordingly. The instruction decoder translates the instructions and passes them to the execution unit, which then executes the instruction. The execution unit transfers the data to the ALU for calculation and receives the result back from there. The data used during execution is temporarily stored in registers.
-Central Processing Unit
+### Central Processing Unit
 
 The Central Processing Unit (CPU) is the functional unit in a computer that provides the actual processing power. It is responsible for processing information and controlling the processing operations. To do this, the CPU fetches commands from memory one after the other and initiates data processing.
 
@@ -131,12 +131,12 @@ There are four different types of ISA:
     VLIW - Very Long Instruction Word
     EPIC - Explicitly Parallel Instruction Computing
 
-RISC
+### RISC
 
 RISC stands for Reduced Instruction Set Computer, a design of microprocessors architecture that aimed to simplify the complexity of the instruction set for assembly programming to one clock cycle. This leads to higher clock frequencies of the CPU but enables a faster execution because smaller instruction sets are used. By an instruction set, we mean the set of machine instructions that a given processor can execute. We can find RISC in most smartphones today, for example. Nevertheless, pretty much all CPUs have a portion of RISC in them. RISC architectures have a fixed length of instructions defined as 32-bit and 64-bit.
-CISC
+### CISC
 
 In contrast to RISC, the Complex Instruction Set Computer (CISC) is a processor architecture with an extensive and complex instruction set. Due to the historical development of computers and their memory, recurring sequences of instructions were combined into complicated instructions in second-generation computers. The addressing in CISC architectures does not require 32-bit or 64-bit in contrast to RISC but can be done with an 8-bit mode.
-Instruction Cycle
+### Instruction Cycle
 
 The instruction set describes the totality of the machine instructions of a processor. The scope of the instruction set varies considerably depending on the processor type. Each CPU may have different instruction cycles and instruction sets, but they are all similar in structure, which we can summarize as follows:
