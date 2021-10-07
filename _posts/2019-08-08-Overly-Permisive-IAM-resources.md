@@ -13,7 +13,7 @@ render_with_liquid: false
 The `user`, `group`, `role`, `policy`, and `identity provider objects` that are stored in IAM. As with other AWS services, you can add, edit, and remove resources from IAM.
 
 
-## Configuration Matter
+
 
 
 
