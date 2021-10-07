@@ -70,3 +70,13 @@ DoS (`Denial of Service`) exploits are codes that prevent other systems from fun
 
 A Web application exploit uses a vulnerability in such software. Such vulnerabilities can, for example, allow a command injection on the application itself or the underlying database.
 
+## CPU Architecture
+
+The architecture of the Von-Neumann was developed by the Hungarian mathematician John von Neumann, and it consists of four functional units:
+
+    Memory
+    Control Unit
+    Arithmetical Logical Unit
+    Input/Output Unit
+
+In the Von-Neumann architecture, the most important units, the Arithmetical Logical Unit (ALU) and Control Unit (CU), are combined in the actual Central Processing Unit (CPU). The CPU is responsible for executing the instructions and for flow control. The instructions are executed one after the other, step by step. The commands and data are fetched from memory by the CU. The connection between processor, memory, and input/output unit is called a bus system, which is not mentioned in the original Von-Neumann architecture but plays an essential role in practice. In the Von-Neumann architecture, all instructions and data are transferred via the bus system.
