@@ -81,6 +81,9 @@ The architecture of the `Von-Neumann` was developed by the Hungarian mathematici
 
 In the Von-Neumann architecture, the most important units, the `Arithmetical Logical Unit (ALU)` and `Control Unit (CU)`, are combined in the actual `Central Processing Unit (CPU`). The CPU is responsible for executing the `instructions` and for `flow control`. The instructions are executed one after the other, step by step. The commands and data are fetched from memory by the `CU`. The connection between processor, memory, and input/output unit is called a `bus system`, which is not mentioned in the original Von-Neumann architecture but plays an essential role in practice. In the Von-Neumann architecture, all instructions and data are transferred via the `bus system`.
 
+## Von-Neumann Architecture
+
+![image](https://user-images.githubusercontent.com/63084488/136327603-11c0c2be-71e9-44f0-89e7-d30c53d5503b.png)
 
 ## Memory
 
