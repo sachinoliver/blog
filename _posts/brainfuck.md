@@ -192,7 +192,7 @@ we get another credentials
 ![image](https://user-images.githubusercontent.com/63084488/137351438-1685bb96-ec81-46b6-be60-fd6882589e3f.png)
 
 
-![[Pasted image 20211010092548.png]]
+![image](https://user-images.githubusercontent.com/63084488/137351602-6be4f097-7902-4b96-b282-fcb54014606f.png)
 
 Key page which is encrypted
 ![[Pasted image 20211010092507.png]]
