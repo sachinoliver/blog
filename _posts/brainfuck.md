@@ -180,7 +180,7 @@ Get the password by looking into the inspect element
 
 ![image](https://user-images.githubusercontent.com/63084488/137350952-3c6a3854-ff18-4c6d-91cc-c1754b8c57fc.png)
 
-![[Pasted image 20211010085125.png]]
+![image](https://user-images.githubusercontent.com/63084488/137351031-c3a49d11-080f-470a-9d33-830e43819777.png)
 
 orisiteis mail box
 ![[Pasted image 20211010085604.png]]
