@@ -183,7 +183,7 @@ Get the password by looking into the inspect element
 ![image](https://user-images.githubusercontent.com/63084488/137351031-c3a49d11-080f-470a-9d33-830e43819777.png)
 
 orisiteis mail box
-![[Pasted image 20211010085604.png]]
+![image](https://user-images.githubusercontent.com/63084488/137351146-e5a5fa5e-9c79-4675-806e-d011e37f1025.png)
 we get another credentials
 ![[Pasted image 20211010085706.png]]
 
