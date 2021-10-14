@@ -58,7 +58,7 @@ Visit https://sup3rs3cr3t.brainfuck.htb/
 ![image](https://user-images.githubusercontent.com/63084488/137349675-6148673d-d51d-4ea9-9427-12ce5d936cbe.png)
 
 Visit www.brainfuck,htb
-![[Pasted image 20211009122538.png]]
+![image](https://user-images.githubusercontent.com/63084488/137349804-7cb16648-6f94-4866-866e-6e54f91f4c1b.png)
 
 Since we have the wordpress site lets enumerate using the wpscan
 
@@ -158,13 +158,13 @@ wpscan --url https://brainfuck.htb --disable-tls-checks --enumerate u
 Copy the POC code from the [vulnerability entry on searchsploit](https://www.exploit-db.com/exploits/41006) and save it in the file privesc.html. Change the URL to the name of the machine.
 
 Run it in the browser and login as administrator.
-![[Pasted image 20211010082530.png]]
+![image](https://user-images.githubusercontent.com/63084488/137349924-88a73a26-c54c-41b2-9f2f-d4c6297feaff.png)
 
 Refresh the brainfuck.htb page and we’re logged in as administrator!
-![[Pasted image 20211010082755.png]]
+![image](https://user-images.githubusercontent.com/63084488/137349984-9346ce58-3fbb-4b6c-8889-e6c74d9bbfa1.png)
 
 There doesn’t seem to be much functionality available for this user. Therefore, let’s try the ‘admin’ user next. Perform the same exploit again except with the username being ‘admin’.
-![[Pasted image 20211010083138.png]]
+![image](https://user-images.githubusercontent.com/63084488/137350072-a5396376-cd5f-417d-832f-bbc161cb8f51.png)
 
 Go to themes from the dashboard
 ![[Pasted image 20211010083328.png]]
