@@ -55,7 +55,7 @@ Nmap done: 1 IP address (1 host up) scanned in 68.77 seconds
 Add new dns name in /etc/hosts file
 
 Visit https://sup3rs3cr3t.brainfuck.htb/
-![[Pasted image 20211009122309.png]]
+![image](https://user-images.githubusercontent.com/63084488/137349675-6148673d-d51d-4ea9-9427-12ce5d936cbe.png)
 
 Visit www.brainfuck,htb
 ![[Pasted image 20211009122538.png]]
