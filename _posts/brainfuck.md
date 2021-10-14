@@ -178,7 +178,7 @@ Get the password by looking into the inspect element
 
 ![image](https://user-images.githubusercontent.com/63084488/137350682-04fde6b3-c69b-40d0-a8d0-8446ce8e7570.png)
 
-![[Pasted image 20211010085053.png]]
+![image](https://user-images.githubusercontent.com/63084488/137350952-3c6a3854-ff18-4c6d-91cc-c1754b8c57fc.png)
 
 ![[Pasted image 20211010085125.png]]
 
