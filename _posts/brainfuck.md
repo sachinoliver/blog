@@ -46,5 +46,60 @@ OS and Service detection performed. Please report any incorrect results at https
 Nmap done: 1 IP address (1 host up) scanned in 68.77 seconds
 ```
 ### Port 443
-![[Pasted image 20211009121606.png]]
 
+
+### checking the certificate:
+![[Pasted image 20211009121732.png]]
+
+Add new dns name in /etc/hosts file
+
+Visit https://sup3rs3cr3t.brainfuck.htb/
+![[Pasted image 20211009122309.png]]
+
+Visit www.brainfuck,htb
+![[Pasted image 20211009122538.png]]
+
+Since we have the wordpress site lets enumerate using the wpscan
+
+```wpscan --url https://brainfuck.htb --disable-tls-checks
+```
+
+we got the wordpress version.
+```
+[+] WordPress version 4.7.3 identified (Insecure, released on 2017-03-06).
+ | Found By: Rss Generator (Passive Detection)
+ |  - https://brainfuck.htb/?feed=rss2, <generator>https://wordpress.org/?v=4.7.3</generator>
+ |  - https://brainfuck.htb/?feed=comments-rss2, <generator>https://wordpress.org/?v=4.7.3</generator>
+```
+
+An outdated wordpress Plugin
+```
+[i] Plugin(s) Identified:
+
+[+] wp-support-plus-responsive-ticket-system
+ | Location: https://brainfuck.htb/wp-content/plugins/wp-support-plus-responsive-ticket-system/
+ | Last Updated: 2019-09-03T07:57:00.000Z
+ | [!] The version is out of date, the latest version is 9.1.2
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | Version: 7.1.3 (100% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - https://brainfuck.htb/wp-content/plugins/wp-support-plus-responsive-ticket-system/readme.txt
+ | Confirmed By: Readme - ChangeLog Section (Aggressive Detection)
+ |  - https://brainfuck.htb/wp-content/plugins/wp-support-plus-responsive-ticket-system/readme.txt
+
+```
+
+Lets search for any exploits 
+```
+searchsploit WP Support Plus Responsive Ticket System
+------------------------------------------------------------------------------------ ---------------------------------
+ Exploit Title                                                                      |  Path
+------------------------------------------------------------------------------------ ---------------------------------
+WordPress Plugin WP Support Plus Responsive Ticket System 2.0 - Multiple Vulnerabil | php/webapps/34589.txt
+WordPress Plugin WP Support Plus Responsive Ticket System 7.1.3 - Privilege Escalat | php/webapps/41006.txt
+WordPress Plugin WP Support Plus Responsive Ticket System 7.1.3 - SQL Injection     | php/webapps/40939.txt
+------------------------------------------------------------------------------------ ---------------------------------
+```
+Let’s look at the privilege escalation vulnerability.
