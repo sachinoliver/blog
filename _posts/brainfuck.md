@@ -46,10 +46,11 @@ OS and Service detection performed. Please report any incorrect results at https
 Nmap done: 1 IP address (1 host up) scanned in 68.77 seconds
 ```
 ### Port 443
-
+![image](https://user-images.githubusercontent.com/63084488/137349387-855f221e-1706-47c0-893c-e3ee5f299484.png)
 
 ### checking the certificate:
-![image](https://user-images.githubusercontent.com/63084488/137349387-855f221e-1706-47c0-893c-e3ee5f299484.png)
+
+![image](https://user-images.githubusercontent.com/63084488/137349515-a0d59812-5aaa-4c1e-9591-1d5db22e5b84.png)
 
 Add new dns name in /etc/hosts file
 
