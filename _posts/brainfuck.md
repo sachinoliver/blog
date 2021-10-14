@@ -187,7 +187,7 @@ orisiteis mail box
 we get another credentials
 ![image](https://user-images.githubusercontent.com/63084488/137351245-cc9f8a63-583d-430f-a2db-ecb1bfae51b4.png)
 
-![[Pasted image 20211010085920.png]]
+![image](https://user-images.githubusercontent.com/63084488/137351351-26c1121f-895b-421b-b8f6-4373e4453acd.png)
 
 ![[Pasted image 20211010085954.png]]
 
