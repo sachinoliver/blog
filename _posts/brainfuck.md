@@ -167,7 +167,7 @@ There doesn’t seem to be much functionality available for this user. Therefore
 ![image](https://user-images.githubusercontent.com/63084488/137350072-a5396376-cd5f-417d-832f-bbc161cb8f51.png)
 
 Go to themes from the dashboard
-![[Pasted image 20211010083328.png]]
+![image](https://user-images.githubusercontent.com/63084488/137350358-d19eb196-64ca-4ecd-8009-29e1ab511649.png)
 
 
 Smtp passwd
