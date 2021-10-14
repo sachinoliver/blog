@@ -176,7 +176,7 @@ Smtp passwd
 Get the password by looking into the inspect element
 ![image](https://user-images.githubusercontent.com/63084488/137350551-891fa877-4754-472f-826e-3a4950d8dbe8.png)
 
-![[Pasted image 20211010085022.png]]
+![image](https://user-images.githubusercontent.com/63084488/137350682-04fde6b3-c69b-40d0-a8d0-8446ce8e7570.png)
 
 ![[Pasted image 20211010085053.png]]
 
