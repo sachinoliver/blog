@@ -132,3 +132,100 @@ http://security.szurek.pl/wp-support-plus-responsive-ticket-system-713-privilege
 Then you can go to admin panel.
 /usr/share/exploitdb/exploits/php/webapps/41006.txt (END)
 ```
+According to the [documentation](https://www.exploit-db.com/exploits/41006), this vulnerability allows you to bypass authentication by logging in as anyone without knowing the password. You do however need a valid username for the attack to work. Therefore, let’s use wpscan to enumerate usernames.
+
+wpscan --url https://brainfuck.htb --disable-tls-checks --enumerate u
+
+```
+[i] User(s) Identified:
+
+[+] admin
+ | Found By: Author Posts - Display Name (Passive Detection)
+ | Confirmed By:
+ |  Rss Generator (Passive Detection)
+ |  Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ |  Login Error Messages (Aggressive Detection)
+
+[+] administrator
+ | Found By: Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ | Confirmed By: Login Error Messages (Aggressive Detection)
+
+```
+
+###  Gaining an Initial Foothold
+
+Copy the POC code from the [vulnerability entry on searchsploit](https://www.exploit-db.com/exploits/41006) and save it in the file privesc.html. Change the URL to the name of the machine.
+
+Run it in the browser and login as administrator.
+![[Pasted image 20211010082530.png]]
+
+Refresh the brainfuck.htb page and we’re logged in as administrator!
+![[Pasted image 20211010082755.png]]
+
+There doesn’t seem to be much functionality available for this user. Therefore, let’s try the ‘admin’ user next. Perform the same exploit again except with the username being ‘admin’.
+![[Pasted image 20211010083138.png]]
+
+Go to themes from the dashboard
+![[Pasted image 20211010083328.png]]
+
+
+Smtp passwd
+![[Pasted image 20211010083552.png]]
+
+Get the password by looking into the inspect element
+![[Pasted image 20211010083650.png]]
+
+![[Pasted image 20211010085022.png]]
+
+![[Pasted image 20211010085053.png]]
+
+![[Pasted image 20211010085125.png]]
+
+orisiteis mail box
+![[Pasted image 20211010085604.png]]
+we get another credentials
+![[Pasted image 20211010085706.png]]
+
+![[Pasted image 20211010085920.png]]
+
+![[Pasted image 20211010085954.png]]
+
+
+![[Pasted image 20211010092548.png]]
+
+Key page which is encrypted
+![[Pasted image 20211010092507.png]]
+
+
+Decrytping
+![[Pasted image 20211010095413.png]]
+![[Pasted image 20211010095329.png]]
+
+
+we get the encrypted idrsa
+![[Pasted image 20211010095730.png]]
+
+
+
+user:
+![[Pasted image 20211010101453.png]]
+
+```
+orestis@brainfuck:~$ ls -la
+total 60
+drwxr-xr-x 7 orestis orestis 4096 Apr 29  2017 .
+drwxr-xr-x 3 root    root    4096 Apr 13  2017 ..
+-rw------- 1 root    root       1 Dec 24  2017 .bash_history
+-rw-r--r-- 1 orestis orestis  220 Apr 13  2017 .bash_logout
+-rw-r--r-- 1 orestis orestis 3771 Apr 13  2017 .bashrc
+drwx------ 2 orestis orestis 4096 Apr 29  2017 .cache
+drwxr-xr-x 3 root    root    4096 Apr 17  2017 .composer
+-rw------- 1 orestis orestis  619 Apr 29  2017 debug.txt
+-rw-rw-r-- 1 orestis orestis  580 Apr 29  2017 encrypt.sage
+drwx------ 3 orestis orestis 4096 Apr 29  2017 mail
+-rw------- 1 orestis orestis  329 Apr 29  2017 output.txt
+-rw-r--r-- 1 orestis orestis  655 Apr 13  2017 .profile
+drwx------ 8 orestis orestis 4096 Apr 29  2017 .sage
+drwx------ 2 orestis orestis 4096 Apr 17  2017 .ssh
+-r-------- 1 orestis orestis   33 Apr 29  2017 user.txt
+```
