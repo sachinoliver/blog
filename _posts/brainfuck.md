@@ -49,7 +49,7 @@ Nmap done: 1 IP address (1 host up) scanned in 68.77 seconds
 
 
 ### checking the certificate:
-![[Pasted image 20211009121732.png]]
+![image](https://user-images.githubusercontent.com/63084488/137349387-855f221e-1706-47c0-893c-e3ee5f299484.png)
 
 Add new dns name in /etc/hosts file
 
