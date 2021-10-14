@@ -195,7 +195,7 @@ we get another credentials
 ![image](https://user-images.githubusercontent.com/63084488/137351602-6be4f097-7902-4b96-b282-fcb54014606f.png)
 
 Key page which is encrypted
-![[Pasted image 20211010092507.png]]
+![image](https://user-images.githubusercontent.com/63084488/137351668-ae3d1784-7e85-46cb-9e24-09d156f27cad.png)
 
 
 Decrytping
