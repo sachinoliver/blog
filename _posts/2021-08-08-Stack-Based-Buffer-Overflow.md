@@ -174,3 +174,57 @@ To understand how it works on the technical level, we need to become familiar wi
     we can manipulate the memory
 
 Another critical point is that the exploits usually only work for a specific version of the software and operating system. Therefore, we have to rebuild and reconfigure the target system to bring it to the same state. After that, the program we are investigating is installed and analyzed. Most of the time, we will only have one attempt to exploit the program if we miss the opportunity to restart it with elevated privileges.
+
+
+The Memory
+
+When the program is called, the sections are mapped to the segments in the process, and the segments are loaded into memory as described by the ELF file.
+
+Buffer
+
+![image](https://user-images.githubusercontent.com/63084488/137447078-c40581b8-840e-4754-b0ac-97f8dccd31ba.png)
+
+.text
+
+The .text section contains the actual assembler instructions of the program. This area can be read-only to prevent the process from accidentally modifying its instructions. Any attempt to write to this area will inevitably result in a segmentation fault.
+.data
+
+The .data section contains global and static variables that are explicitly initialized by the program.
+.bss
+
+Several compilers and linkers use the .bss section as part of the data segment, which contains statically allocated variables represented exclusively by 0 bits.
+The Heap
+
+Heap memory is allocated from this area. This area starts at the end of the ".bss" segment and grows to the higher memory addresses.
+The Stack
+
+Stack memory is a Last-In-First-Out data structure in which the return addresses, parameters, and, depending on the compiler options, frame pointers are stored. C/C++ local variables are stored here, and you can even copy code to the stack. The Stack is a defined area in RAM. The linker reserves this area and usually places the stack in RAM's lower area above the global and static variables. The contents are accessed via the stack pointer, set to the upper end of the stack during initialization. During execution, the allocated part of the stack grows down to the lower memory addresses.
+
+Modern memory protections (DEP/ASLR) would prevent the execution of such code against buffer overflows.
+Vulnerable Program
+
+We are now writing a simple C-program called bow.c with a vulnerable function called strcpy().
+
+Bow.c
+
+```c
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+int bowfunc(char *string) {
+
+	char buffer[1024];
+	strcpy(buffer, string);
+	return 1;
+}
+
+int main(int argc, char *argv[]) {
+
+	bowfunc(argv[1]);
+	printf("Done.\n");
+	return 1;
+}
+```
+
+
