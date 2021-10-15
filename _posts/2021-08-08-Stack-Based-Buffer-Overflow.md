@@ -410,7 +410,9 @@ gdb-peda$
 The difference between the AT&T and Intel syntax is not only in the presentation of the instructions with their symbols but also in the order and direction in which the instructions are executed and read.
 
 Let us take the following instruction as an example:
-
+```assembly
+0x000011e9 <+11>:	mov    ebp,esp
+```
 
 With the Intel syntax, we have the following order for the instruction from the example:
 Intel Syntax
