@@ -234,6 +234,22 @@ Disable ASLR
 Next, we compile the C code into a 32bit ELF binary.
 Compilation
 
+```bash
+┌──(root💀kali)-[~/Downloads/hackthebox/bof-module]
+└─# gcc bow.c -o bow32 -fno-stack-protector -z execstack -m32
+                                                                                                                      
+┌──(root💀kali)-[~/Downloads/hackthebox/bof-module]
+└─# file bow32 | tr "," "\n"
+bow32: ELF 32-bit LSB pie executable
+ Intel 80386
+ version 1 (SYSV)
+ dynamically linked
+ interpreter /lib/ld-linux.so.2
+ BuildID[sha1]=9e11d6435455788ef01253074df027de57980c87
+ for GNU/Linux 3.2.0
+ not stripped
+```
+
 Vulnerable C Functions
 
 There are several vulnerable functions in the C programming language that do not independently protect the memory. Here are some of the functions:
