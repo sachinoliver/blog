@@ -228,6 +228,7 @@ int main(int argc, char *argv[]) {
 ```
 
 Disable ASLR
+
 ![image](https://user-images.githubusercontent.com/63084488/137448209-66a363bf-6041-4041-8cc5-5e0ab6fc57cd.png)
 
 Next, we compile the C code into a 32bit ELF binary.
