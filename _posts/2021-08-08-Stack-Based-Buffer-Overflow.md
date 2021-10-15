@@ -270,6 +270,45 @@ GDB provides us with the usual traceability features like breakpoints or stack t
 We use GNU Debugger (GDB) to view the created binary on the assembler level. Once we have executed the binary with GDB, we can disassemble the program's main function.
 GDB - AT&T Syntax
 
+```assembly
+┌──(root💀kali)-[~/Downloads/hackthebox/bof-module]
+└─# gdb -q bow32
+Reading symbols from bow32...
+(No debugging symbols found in bow32)
+gdb-peda$ disassemble main
+Dump of assembler code for function main:
+   0x000011de <+0>:	lea    ecx,[esp+0x4]
+   0x000011e2 <+4>:	and    esp,0xfffffff0
+   0x000011e5 <+7>:	push   DWORD PTR [ecx-0x4]
+   0x000011e8 <+10>:	push   ebp
+   0x000011e9 <+11>:	mov    ebp,esp
+   0x000011eb <+13>:	push   ebx
+   0x000011ec <+14>:	push   ecx
+   0x000011ed <+15>:	call   0x10b0 <__x86.get_pc_thunk.bx>
+   0x000011f2 <+20>:	add    ebx,0x2e0e
+   0x000011f8 <+26>:	mov    eax,ecx
+   0x000011fa <+28>:	mov    eax,DWORD PTR [eax+0x4]
+   0x000011fd <+31>:	add    eax,0x4
+   0x00001200 <+34>:	mov    eax,DWORD PTR [eax]
+   0x00001202 <+36>:	sub    esp,0xc
+   0x00001205 <+39>:	push   eax
+   0x00001206 <+40>:	call   0x11a9 <bowfunc>
+   0x0000120b <+45>:	add    esp,0x10
+   0x0000120e <+48>:	sub    esp,0xc
+   0x00001211 <+51>:	lea    eax,[ebx-0x1ff8]
+   0x00001217 <+57>:	push   eax
+   0x00001218 <+58>:	call   0x1040 <puts@plt>
+   0x0000121d <+63>:	add    esp,0x10
+   0x00001220 <+66>:	mov    eax,0x1
+   0x00001225 <+71>:	lea    esp,[ebp-0x8]
+   0x00001228 <+74>:	pop    ecx
+   0x00001229 <+75>:	pop    ebx
+   0x0000122a <+76>:	pop    ebp
+   0x0000122b <+77>:	lea    esp,[ecx-0x4]
+   0x0000122e <+80>:	ret    
+End of assembler dump.
+gdb-peda$ 
+```
 
 In the first column, the hexadecimal numbers represent the memory addresses. The numbers with the plus sign (+) show the address jumps in memory in bytes, used for the respective instruction. Next, we can see the assembler instructions (mnemonics) with registers and their operation suffixes. The current syntax is AT&T, which we can recognize by the % and $ characters.
 Memory Address 	Address Jumps 	Assembler Instruction 	Operation Suffixes
