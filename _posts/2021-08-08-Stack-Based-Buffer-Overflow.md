@@ -414,8 +414,13 @@ Let us take the following instruction as an example:
 
 With the Intel syntax, we have the following order for the instruction from the example:
 Intel Syntax
-Instruction 	Destination 	Source
-mov 	ebp 	esp
+
+| Instruction | Destination | Source |
+|-------------|-------------|--------|
+| mov 	      |   ebp 	    | esp    |
+
 AT&T Syntax
-Instruction 	Source 	Destination
-mov 	%esp 	%ebp
+
+| Instruction | Source | Destination |
+|-------------|--------|-------------|
+| mov 	      |  %esp  |  %ebp       |
