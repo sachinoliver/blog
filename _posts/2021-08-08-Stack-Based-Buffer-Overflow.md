@@ -143,3 +143,10 @@ In contrast to RISC, the Complex Instruction Set Computer (CISC) is a processor 
 ### Instruction Cycle
 
 The instruction set describes the totality of the machine instructions of a processor. The scope of the instruction set varies considerably depending on the processor type. Each CPU may have different instruction cycles and instruction sets, but they are all similar in structure, which we can summarize as follows:
+
+Instruction 	Description
+1. FETCH 	The next machine instruction address is read from the Instruction Address Register (IAR). It is then loaded from the Cache or RAM into the Instruction Register (IR).
+2. DECODE 	The instruction decoder converts the instructions and starts the necessary circuits to execute the instruction.
+3. FETCH OPERANDS 	If further data have to be loaded for execution, these are loaded from the cache or RAM into the working registers.
+4. EXECUTE 	The instruction is executed. This can be, for example, operations in the ALU, a jump in the program, the writing back of results into the working registers, or the control of peripheral devices. Depending on the result of some instructions, the status register is set, which can be evaluated by subsequent instructions.
+5. UPDATE INSTRUCTION POINTER 	If no jump instruction has been executed in the EXECUTE phase, the IAR is now increased by the length of the instruction so that it points to the next machine instruction.
