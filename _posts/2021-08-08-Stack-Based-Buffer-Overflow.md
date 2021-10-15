@@ -358,7 +358,10 @@ gdb-peda$
 
 We don't have to change the display mode manually continually. We can also set this as the default syntax with the following command.
 Change GDB Syntax
-
+```zsh
+┌──(root💀kali)-[~/Downloads/hackthebox/bof-module]
+└─# echo 'set disassembly-flavor intel' > ~/.gdbinit
+```
 If we now rerun GDB and disassemble the main function, we see the Intel syntax.
 GDB - Intel Syntax
 
