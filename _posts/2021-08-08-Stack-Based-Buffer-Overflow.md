@@ -260,3 +260,24 @@ Memory Address 	Address Jumps 	Assembler Instruction 	Operation Suffixes
 ... 	... 	... 	...
 
 The Intel syntax makes the disassembled representation easier to read, and we can change the syntax by entering the following commands in GDB:
+GDB - Change the Syntax to Intel
+
+We don't have to change the display mode manually continually. We can also set this as the default syntax with the following command.
+Change GDB Syntax
+
+If we now rerun GDB and disassemble the main function, we see the Intel syntax.
+GDB - Intel Syntax
+
+
+The difference between the AT&T and Intel syntax is not only in the presentation of the instructions with their symbols but also in the order and direction in which the instructions are executed and read.
+
+Let us take the following instruction as an example:
+
+
+With the Intel syntax, we have the following order for the instruction from the example:
+Intel Syntax
+Instruction 	Destination 	Source
+mov 	ebp 	esp
+AT&T Syntax
+Instruction 	Source 	Destination
+mov 	%esp 	%ebp
