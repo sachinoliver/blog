@@ -227,4 +227,36 @@ int main(int argc, char *argv[]) {
 }
 ```
 
+Disable ASLR
 
+Next, we compile the C code into a 32bit ELF binary.
+Compilation
+
+Vulnerable C Functions
+
+There are several vulnerable functions in the C programming language that do not independently protect the memory. Here are some of the functions:
+
+    strcpy
+    gets
+    sprintf
+    scanf
+    strcat
+    ...
+
+GDB Introductions
+
+GDB, or the GNU Debugger, is the standard debugger of Linux systems developed by the GNU Project. It has been ported to many systems and supports the programming languages C, C++, Objective-C, FORTRAN, Java, and many more.
+
+GDB provides us with the usual traceability features like breakpoints or stack trace output and allows us to intervene in the execution of programs. It also allows us, for example, to manipulate the variables of the application or to call functions independently of the normal execution of the program.
+
+We use GNU Debugger (GDB) to view the created binary on the assembler level. Once we have executed the binary with GDB, we can disassemble the program's main function.
+GDB - AT&T Syntax
+
+
+In the first column, the hexadecimal numbers represent the memory addresses. The numbers with the plus sign (+) show the address jumps in memory in bytes, used for the respective instruction. Next, we can see the assembler instructions (mnemonics) with registers and their operation suffixes. The current syntax is AT&T, which we can recognize by the % and $ characters.
+Memory Address 	Address Jumps 	Assembler Instruction 	Operation Suffixes
+0x00000582 	<+0>: 	lea 	0x4(%esp),%ecx
+0x00000586 	<+4>: 	and 	$0xfffffff0,%esp
+... 	... 	... 	...
+
+The Intel syntax makes the disassembled representation easier to read, and we can change the syntax by entering the following commands in GDB:
