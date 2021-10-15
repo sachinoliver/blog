@@ -311,10 +311,11 @@ gdb-peda$
 ```
 
 In the first column, the hexadecimal numbers represent the memory addresses. The numbers with the plus sign (+) show the address jumps in memory in bytes, used for the respective instruction. Next, we can see the assembler instructions (mnemonics) with registers and their operation suffixes. The current syntax is AT&T, which we can recognize by the % and $ characters.
-Memory Address 	Address Jumps 	Assembler Instruction 	Operation Suffixes
-0x00000582 	<+0>: 	lea 	0x4(%esp),%ecx
-0x00000586 	<+4>: 	and 	$0xfffffff0,%esp
-... 	... 	... 	...
+| Memory Address | Address Jumps | Assembler Instruction | Operation Suffixes |
+| ---------------|---------------|-----------------------|--------------------|
+| 0x00000582 	   |  <+0>: 	     |      lea 	           |  0x4(%esp),%ecx    |
+| 0x00000586 	   |  <+4>: 	     |      and 	           | $0xfffffff0,%esp   |
+
 
 The Intel syntax makes the disassembled representation easier to read, and we can change the syntax by entering the following commands in GDB:
 GDB - Change the Syntax to Intel
