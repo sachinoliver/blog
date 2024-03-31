@@ -20,7 +20,7 @@ timezone: Asia/Shanghai
 
 title: 0LiVEr                          # the main title
 
-tagline: SecOps / Pentester / CTF player   # it will display as the sub-title
+tagline: Security Reasercher / Reverse Engineer   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Cyber Security Blogs / CTF Writeups
